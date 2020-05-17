@@ -1,0 +1,16 @@
+import 'package:Curso_de_Dart/Curso_de_Dart.dart';
+import 'package:test/test.dart';
+
+void main() {
+  group('A group of tests', () {
+    Awesome awesome;
+
+    setUp(() {
+      awesome = Awesome();
+    });
+
+    test('First Test', () {
+      expect(awesome.isAwesome, isTrue);
+    });
+  });
+}
